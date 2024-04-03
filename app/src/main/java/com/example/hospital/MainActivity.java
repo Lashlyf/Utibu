@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnSubmit.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            Intent intent = new Intent(MainActivity.this, OrderActivity.class);
             intent.putExtra("selectedCondition", selectedCondition);
             startActivity(intent);
         });
