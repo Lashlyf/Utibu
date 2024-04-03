@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#19191b"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Full Name"
+                android:background="@drawable/btn_background"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Username"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_background"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Date of Birth"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_background"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"
+                android:inputType="date" />
+
+            <Spinner
+                android:id="@+id/spGender"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_background"
+                android:textAlignment="center"
+                android:entries="@array/gender_array"
+                android:prompt="@string/gender_prompt" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Email Address"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_background"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Phone Number"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_background"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_background"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                tools:ignore="HardcodedText" />
+
+            <Spinner
+                android:id="@+id/spMedicalCondition"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_background"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"
+                android:entries="@array/medical_condition_array"
+                android:prompt="@string/medical_condition_prompt" />
+
+            <EditText
+                android:id="@+id/etMedicationDetails"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_background"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"
+                android:hint="Medication Details (if applicable)"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etEmergencyContactName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_background"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"
+                android:hint="Emergency Contact Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etEmergencyContactPhone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_background"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"
+                android:hint="Emergency Contact Phone Number"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_background"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

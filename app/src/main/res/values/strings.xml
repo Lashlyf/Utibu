@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Hospital</string>
+        <string name="gender_prompt">Select Gender</string>
+        <string name="medical_condition_prompt">Select Medical Condition</string>
+
+        <string-array name="gender_array">
+            <item>Male</item>
+            <item>Female</item>
+            <item>Other</item>
+        </string-array>
+
+        <string-array name="medical_condition_array">
+            <item>HIV</item>
+            <item>Diabetes</item>
+            <item>Hypertension</item>
+        </string-array>
+</resources>
