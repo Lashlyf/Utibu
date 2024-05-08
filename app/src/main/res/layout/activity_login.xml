@@ -37,7 +37,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/lgnusername"
+                android:id="@+id/lgnemail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="32dp"
@@ -46,7 +46,7 @@
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/btn_background"
                 android:ems="10"
-                android:hint="Username"
+                android:hint="Email address"
                 android:inputType="text"
                 android:textAlignment="center"
                 android:textColor="@color/white"

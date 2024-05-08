@@ -1,6 +1,7 @@
 package com.example.hospital.Adapter;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.RoundedCorner;
 import android.view.View;
@@ -11,6 +12,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.CenterCrop;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.hospital.Domain.SliderItems;
 import com.example.hospital.R;
 
@@ -36,12 +41,13 @@ public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderView
 
     @Override
     public void onBindViewHolder(@NonNull SliderAdapter.SliderViewHolder holder, int position) {
-
+    holder.setImage(sliderItems.get(position));
+    if(position == sliderItems.size() - 2){
+    viewPager2.post(runnable);
     }
-
-    @Override
+}   @Override
     public int getItemCount() {
-        return 0;
+        return sliderItems.size();
     }
 
     public class SliderViewHolder extends RecyclerView.ViewHolder {
@@ -56,8 +62,12 @@ public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderView
             Glide.with(context)
                     .load(sliderItems.getImage())
                     .apply(requestOptions)
-                    .into(imageView;
-        }
+                    .into(imageView);
+            }
     } private Runnable runnable = new Runnable(){
-        @Ovee
+        @Override public void run(){
+        sliderItems.addAll(sliderItems);
+        notifyDataSetChanged();
+    }
+    };
 }
