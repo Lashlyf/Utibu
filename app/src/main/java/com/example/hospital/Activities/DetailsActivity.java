@@ -1,14 +1,16 @@
-package com.example.hospital;
+package com.example.hospital.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class OrderActivity extends AppCompatActivity {
+import com.example.hospital.R;
+
+public class DetailsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_order);
+        setContentView(R.layout.activity_details);
     }
 }

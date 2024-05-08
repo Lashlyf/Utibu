@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OrderActivity">
+    tools:context=".Activities.OrderActivity">
 
     <ScrollView
         android:id="@+id/scrollview"
@@ -171,14 +171,6 @@
                 android:layout_gravity="center_vertical"
                 app:srcCompat="@drawable/baseline_person_24"/>
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.2"
-                android:layout_margin="5dp"
-                app:tint="@color/white"
-                android:layout_gravity="center_vertical"/>
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -202,13 +194,6 @@
         </LinearLayout>
         </com.google.android.material.bottomappbar.BottomAppBar>
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            style="@style/Floating"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_anchor="@+id/app_bar"
-            app:layout_anchorGravity="center"
-            app:maxImageSize="30dp"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

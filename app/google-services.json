@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "504617932850",
+    "project_id": "bunifu-ec2be",
+    "storage_bucket": "bunifu-ec2be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504617932850:android:372eb5d6088d35d5da042b",
+        "android_client_info": {
+          "package_name": "com.example.hospital"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyXvFxAx-zdytQ48N9w96SCqvq1qKGc6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
