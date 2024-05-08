@@ -47,17 +47,16 @@
                     app:layout_constraintTop_toTopOf="@+id/imageView"
                     app:layout_constraintVertical_bias="1.0"
                     app:shapeAppearanceOverlay="@style/roundedImageRounded"
-                    app:strokeWidth="1dp"
-                    android:background="@drawable/utibu"/>
+                    app:strokeWidth="1dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView"
-                    android:text="Medicine Acquisition\n Made Easy"
+                    android:text="Safe sex\n is the best sex"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:textSize="25sp"
                     android:layout_marginTop="28dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -67,10 +66,10 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Make order and pay at your convenience"
+                    android:text="Educating on knowledge, preventing an unplanned college"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="15sp"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

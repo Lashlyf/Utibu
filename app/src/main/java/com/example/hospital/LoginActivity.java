@@ -50,6 +50,8 @@ public class LoginActivity extends AppCompatActivity implements DatabaseConnecti
             public void onClick(View v) {
                 // Create and execute the DatabaseConnectionTask
                 new DatabaseConnectionTask(jdcDemo, LoginActivity.this).execute();
+                Intent intent = new Intent(LoginActivity.this, OrderActivity.class);
+                startActivity(intent);
             }
         });
     }

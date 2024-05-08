@@ -68,19 +68,7 @@
                 android:textAlignment="center"
                 android:inputType="textEmailAddress" />
 
-            <EditText
-                android:id="@+id/etPhoneNumber"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:hint="Phone Number"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/btn_background"
-                android:textColorHint="@color/white"
-                android:textAlignment="center"
-                android:inputType="phone" />
+
 
             <EditText
                 android:id="@+id/etPassword"
