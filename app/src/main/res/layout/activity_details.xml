@@ -32,22 +32,78 @@
                     android:id="@+id/posterBigImg"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
                     android:alpha="0.1"
-                    android:scaleType="centerCrop"/>
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="210dp"
-                    android:layout_height="300dp"
                     android:id="@+id/posterNormalImg"
+                    android:layout_width="200dp"
+                    android:layout_height="230dp"
+                    android:background="@drawable/male_reproductive"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/posterBigImg"
-                    app:shapeAppearanceOverlay="@style/roundedImageRounded"/>
+                    app:layout_constraintVertical_bias="0.517"
+                    app:shapeAppearanceOverlay="@style/roundedImageRounded" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/bg_shadow"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="200dp">
+
+                    <TextView
+                        android:id="@+id/articleNameTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginBottom="24dp"
+                        android:maxLines="2"
+                        android:text="Understanding contraception methods"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginEnd="64dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <TextView
+                            android:id="@+id/articleRateTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableStart="@drawable/baseline_star_24"
+                            android:drawablePadding="5dp"
+                            android:drawableTint="@color/white"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            tools:ignore="RtlCompat" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -57,6 +113,7 @@
                     android:id="@+id/imageView9"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
+                    android:background="@drawable/bg_circle_dark"
                     android:src="@drawable/baseline_arrow_back_24"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -71,56 +128,43 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     android:padding="8dp"
-                    app:tint="@color/white" />
+                    app:tint="@color/white"
+                   android:background="@drawable/bg_circle_dark"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView17"
+                android:drawableStart="@drawable/baseline_info_24"
+                android:drawableTint="@color/white"
+                android:text="Prologue"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_margin="16dp"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout">
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"/>
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Title"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:maxLines="2"
-                    android:layout_marginBottom="24dp"
-                    app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:id="@+id/textView16"/>
-                <LinearLayout
-                    android:id="@+id/linearLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginStart="64dp"
-                    android:layout_marginEnd="64dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/articleInfo"
+                android:text="This article provides an overview of various contraceptive methods, their effectiveness, and considerations for choosing the right method. It could cover:\n
 
-                    <TextView
-                        android:id="@+id/articleRateTxt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:drawableStart="@drawable/baseline_star_24"
-                        android:drawableTint="@color/white"
-                        android:gravity="center_vertical"
-                        android:padding="5dp"
-                        android:text="0"
-                        android:textColor="@color/white"
-                        android:drawablePadding="5dp"
-                        tools:ignore="RtlCompat" />
-                </LinearLayout>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            *Barrier methods (condoms, diaphragms, etc.)\n
+            *Hormonal methods (birth control pills, patches, rings, etc.)\n
+            *Natural methods (fertility awareness, withdrawal, etc.)\n
+            *Emergency contraception (Plan B, copper IUDs)\n"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView17"
+                app:layout_constraintStart_toStartOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/textView17"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

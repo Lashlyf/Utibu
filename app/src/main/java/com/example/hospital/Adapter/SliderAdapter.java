@@ -1,9 +1,7 @@
 package com.example.hospital.Adapter;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
-import android.view.RoundedCorner;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -25,6 +23,10 @@ public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderView
     private List<SliderItems> sliderItems;
     private ViewPager2 viewPager2;
     private Context context;
+    private OnItemClickListener onItemClickListener;
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        this.onItemClickListener = listener;
+    }
     public SliderAdapter(List<SliderItems> sliderItems,  ViewPager2 viewPager2) {
         this.sliderItems = sliderItems;
         this.viewPager2 = viewPager2;
@@ -43,11 +45,23 @@ public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderView
     public void onBindViewHolder(@NonNull SliderAdapter.SliderViewHolder holder, int position) {
     holder.setImage(sliderItems.get(position));
     if(position == sliderItems.size() - 2){
-    viewPager2.post(runnable);
+        viewPager2.post(runnable);
     }
-}   @Override
+
+        holder.setImage(sliderItems.get(position));
+
+//        holder.itemView.setOnClickListener(v -> {
+//            if (onItemClickListener != null) {
+//                onItemClickListener.onItemClick(position);
+//            }
+//        });
+    }
+    @Override
     public int getItemCount() {
         return sliderItems.size();
+    }
+    public interface OnItemClickListener {
+        void onItemClick(int position);
     }
 
     public class SliderViewHolder extends RecyclerView.ViewHolder {
@@ -55,7 +69,19 @@ public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderView
         public SliderViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.imageSlide);
+            imageView.setOnClickListener(v -> {
+                if (onItemClickListener != null) {
+                    onItemClickListener.onItemClick(getAdapterPosition());
+                }
+            });
         }
+
+//        public void bindData(SliderItems sliderItem) {
+//            imageView.setImageResource(sliderItem.getImage());
+//            Glide.with(context)
+//                    .load(sliderItem.getImage())
+//                    .into(imageView);
+//        }
         void setImage(SliderItems sliderItems){
             RequestOptions requestOptions = new RequestOptions();
             requestOptions = requestOptions.transforms(new CenterCrop(), new RoundedCorners(60));

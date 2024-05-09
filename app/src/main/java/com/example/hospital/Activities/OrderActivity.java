@@ -7,8 +7,10 @@ import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.MarginPageTransformer;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 
 import com.example.hospital.Adapter.SliderAdapter;
@@ -31,11 +33,16 @@ public class OrderActivity extends AppCompatActivity {
         banners();
     }
 
+
     private void banners() {
         List<SliderItems> sliderItems = new ArrayList<>();
         sliderItems.add(new SliderItems(R.drawable.image1));
         sliderItems.add(new SliderItems(R.drawable.intro_image));
         sliderItems.add(new SliderItems(R.drawable.male_reproductive));
+
+        SliderAdapter sliderAdapter = new SliderAdapter(sliderItems, viewPager2);
+        sliderAdapter.setOnItemClickListener(this::onItemClick);
+        viewPager2.setAdapter(sliderAdapter);
 
         viewPager2.setAdapter(new SliderAdapter(sliderItems, viewPager2));
         viewPager2.setClipToPadding(false);
@@ -84,5 +91,30 @@ public class OrderActivity extends AppCompatActivity {
 
     private void initView() {
         viewPager2 = findViewById(R.id.recycler);
+    }
+    public void onItemClick(int position) {
+
+            Log.d("OrderActivity", "onItemClick called with position: " + position);
+
+        // Handle the click event here
+        // You can start a new activity or navigate to a fragment based on the clicked position
+        switch (position) {
+            case 0:
+                Log.d("😂😂😂😂😂😂","You just worked");
+                // Start a new activity for the first image
+                startActivity(new Intent(this, DetailsActivity.class));
+                break;
+            case 1:
+                Log.d("😂😂😂😂😂😂","You just worked");
+                // Start a new activity for the second image
+                startActivity(new Intent(this, DetailsActivity.class));
+                break;
+            case 2:
+                Log.d("😂😂😂😂😂😂","You just worked");
+                // Start a new activity for the third image
+                startActivity(new Intent(this,  DetailsActivity.class));
+                break;
+            // Add more cases for other positions if needed
+        }
     }
 }
