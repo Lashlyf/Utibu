@@ -109,11 +109,11 @@ public class OrderActivity extends AppCompatActivity {
         switch (position) {
             case 0:
                 imageResource = R.drawable.image1; // Replace with the actual image resource ID
-                articleInfo = "Article information for image1"; // Replace with the actual article information
+                articleInfo = getString(R.string.About_sex); // Replace with the actual article information
                 break;
             case 1:
                 imageResource = R.drawable.intro_image; // Replace with the actual image resource ID
-                articleInfo = "Article information for intro_image"; // Replace with the actual article information
+                articleInfo = getString(R.string.Safe_sex); // Replace with the actual article information
                 break;
             case 2:
                 imageResource = R.drawable.male_reproductive; // Replace with the actual image resource ID

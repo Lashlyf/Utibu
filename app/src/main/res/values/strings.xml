@@ -40,6 +40,46 @@
     <p><i>The next time you think about sex, remember all the complex parts of your body that are involved in the process.
     Such an amazing system should never be taken for granted.\n</i></p><br/></string>
 
+    <string name="Safe_sex">Safer sex practices often involve using barriers in your body to help prevent you and your partner from sharing bodily fluids.
+        Some of these barrier methods include:external condoms,internal condoms,dental dams,gloves.
+        These methods have been shown to be effective at preventing STIs, which are transmitted through bodily fluids such as:semen,blood,vaginal secretions,saliva.
+        Barrier methods can help protect you and your partner from STIs such as:HIV,gonorrhea,chlamydia,trichomoniasis,hepatitis A, B, and C.
+        Barrier methods are less effective at preventing STIs that are transmitted through skin-to-skin contact, but they can still help reduce your risk.\n
+        When selecting barrier methods, opt for latex or polyurethane condoms and dental dams. And always use them during any kind of sexual contact or penetration to protect you and your partner.
+        According to the Centers for Disease Control and Prevention, HPV causes about 70 percentTrusted Source of cancers of the oropharynx (back of the throat near the base of the tongue and tonsils) in the United States.
+        This year, according to the American Cancer Society, slightly more than 54,000 peopleTrusted Source will be diagnosed with oral cavity or oropharyngeal cancer in the United States.
+        Research also shows that there’s been a steady increase in the number of oropharyngeal cancer diagnoses caused by an HPV infection.
+        HPV is not known to cause other mouth and throat cancers in areas such as the mouth, salivary glands, larynx (voice box), lip, or nose.\n
+        Prevent HIV with PrEP\n
+        PrEP, or pre-exposure prophylaxis, is a prescription medication that’s designed to help prevent contracting HIV during sex without a barrier method or when sharing needles. It’s taken before possible HIV exposure.
+        The most common PrEP pills are available under the brand names Truvada and Descovy.</string>
+
+    <string name="About_sex">Healthy sex is just one aspect of sexual health.
+        Sexual health encompasses the entire spectrum of health and well-being of an individual.
+        It includes all the following aspects in relation to sexuality:\n
+        *physical\n
+        *emotional\n
+        *mental\n
+        *social\n
+        According to the World Health Organization (WHO)Trusted Source, the scope of sexual health is wide.
+        It includes not only individuals, couples, and families, but also communities and whole cultures.It involves topics such as:
+
+        -sexual orientation and gender identity\n
+        -knowledge of anatomy, reproductive health, and fertility\n
+        -understanding the risks involved in sexual activity\n
+        -respectful relationships free of coercion or violence\n
+        -pleasurable and safe sexual experiences\n
+        -access to good healthcare\n
+        -access to educational resources about the practicalities of self-care as it relates to sexual activities\n
+        Read on to learn about these areas of sexual health:
+
+    1.safer sex practices\n
+    2.getting screened regularly for sexually transmitted infections (STIs)\n
+    3.choosing vaccines and medications\n
+    4.using contraception properly\n
+    5.getting medical treatment for reproductive health issues\n
+    6.what to do about low libido\n</string>
+
     <string-array name="gender_array">
         <item>Male</item>
         <item>Female</item>
