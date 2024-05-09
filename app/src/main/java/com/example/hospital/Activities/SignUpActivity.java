@@ -64,7 +64,7 @@ public class SignUpActivity extends AppCompatActivity {
                                                     // Failed to update display name
                                                     Toast.makeText(SignUpActivity.this, "Failed to update display name.", Toast.LENGTH_SHORT).show();
                                                 }
-                                            }
+                                             }
                                         });
                             } else {
                                 // User creation failed, display an error message
