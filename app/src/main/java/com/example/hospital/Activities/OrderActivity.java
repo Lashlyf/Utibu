@@ -7,6 +7,7 @@ import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.MarginPageTransformer;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -102,20 +103,30 @@ public class OrderActivity extends AppCompatActivity {
     private void handleItemClick(int position) {
         Log.d("SlideshowActivity", "Item clicked at position: " + position);
 
-        // Handle the click event here
-        // You can start a new activity or navigate to a fragment based on the clicked position
+        // Get the appropriate image resource and article information based on the position
+        int imageResource = 0;
+        String articleInfo = "";
         switch (position) {
             case 0:
-                // Start a new activity or perform an action for the first image
+                imageResource = R.drawable.image1; // Replace with the actual image resource ID
+                articleInfo = "Article information for image1"; // Replace with the actual article information
                 break;
             case 1:
-                // Start a new activity or perform an action for the second image
+                imageResource = R.drawable.intro_image; // Replace with the actual image resource ID
+                articleInfo = "Article information for intro_image"; // Replace with the actual article information
                 break;
             case 2:
-                // Start a new activity or perform an action for the third image
+                imageResource = R.drawable.male_reproductive; // Replace with the actual image resource ID
+                articleInfo = "Article information for male_reproductive"; // Replace with the actual article information
                 break;
             // Add more cases for other positions if needed
         }
+
+        // Start the SlideshowActivity and pass the image resource and article information
+        Intent intent = new Intent(OrderActivity.this, SlideshowActivity.class);
+        intent.putExtra("imageResource", imageResource);
+        intent.putExtra("articleInfo", articleInfo);
+        startActivity(intent);
     }
 
     @Override
