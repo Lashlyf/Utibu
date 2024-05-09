@@ -2,6 +2,43 @@
     <string name="app_name">Hospital</string>
     <string name="gender_prompt">Select Gender</string>
     <string name="medical_condition_prompt">Select Medical Condition</string>
+    <string name="Male_reproductive_system" >
+        <h1>Male Anatomy Explained\n</h1>
+    <p>It’s a common myth that men think about sex every seven seconds.
+        However, a study conducted at Ohio State University suggests the real number is likely closer to 19 times a day.
+        Regardless of the figure, you can guarantee most of those thoughts concern getting busy between the sheets, and not what happens in the body.
+        A lot of men have no idea how wonderfully complex their anatomy actually is, but I’m here to offer some insights.\n
+    </p><br/>
+        <h2>PENIS: MAN’S BEST FRIEND\n</h2><br/>
+    <p>The penis is the part of the reproductive system men are most familiar with because it’s the organ used in sexual intercourse and masturbation.
+        It actually has three parts: the root, the body, and the glans penis or head.
+        The root attaches to the abdominal wall.
+        The body’s three chambers fill with blood to cause an erection.
+        If blood flow is compromised, erectile dysfunction occurs.
+        The glans penis has a high concentration of nerve endings which makes sex pleasurable.\n</p><br/>
+        <h2>SCROTUM: HOLDS TESTES AND REGULATES TEMPERATURE\n</h2><br/>
+    <p>The scrotum is a sack of skin and muscles that houses the testes.
+        The scrotum helps keep the testes away from the body, so they’re cool for optimal sperm development\n.</p><br/>
+        <h2>TESTES: SPERM AND TESTOSTERONE PRODUCERS\n</h2><br/>
+        <p>The testes are two glands which produce sperm and testosterone.
+        If the testes don’t work effectively, you may have a low sperm count and low testosterone levels.
+            While the terms testicles and testes are often used interchangeably, the testicles are actually the testes and their surrounding structures.\n</p><br/>
+    <p>After the testes make sperm, the sperm travels to the epididymis to grow.
+        During sexual arousal, contractions send the mature sperm on their way.
+        An epididymal obstruction can sometimes form, causing infertility, but this can be diagnosed and effectively treated.\n</p><br/>
+        <h2>VAS DEFERENS AND SEMINAL VESICLES: AID EJACULATION\n</h2><br/>
+    <p>Together the vas deferens and seminal vesicles form the ejaculatory duct.
+        Sperm from the epididymis reaches the vas deferens, then travels to the seminal vesicles where it joins with fluids to become semen.
+        During ejaculation, muscles surrounding the seminal vesicles expel the semen.
+        Up to 30% of men can experience premature ejaculation, while many men, particularly as they age, may experience delayed ejaculation.\n</p><br/>
+        <h2>PROSTATE GLAND: MAKES PROSTATIC FLUID\n</h2><br/>
+    <p>The prostate produces prostatic fluid. This white fluid nourishes, protects, and supports sperm, and is the major component in semen.\n</p><br/>
+    <h2>URETHRA: EMPTIES BODILY FLUID\n</h2><br/>
+    <p>The urethra is the final stop before sperm leaves the body during an orgasm.
+        This tube works double-duty, also carrying urine from the bladder.
+        During an erection, urine flow is blocked to ensure only semen leaves the body during an orgasm.\n</p><br/>
+    <p><i>The next time you think about sex, remember all the complex parts of your body that are involved in the process.
+    Such an amazing system should never be taken for granted.\n</i></p><br/></string>
 
     <string-array name="gender_array">
         <item>Male</item>

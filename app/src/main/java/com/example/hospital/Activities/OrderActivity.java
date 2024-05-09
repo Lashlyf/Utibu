@@ -117,7 +117,7 @@ public class OrderActivity extends AppCompatActivity {
                 break;
             case 2:
                 imageResource = R.drawable.male_reproductive; // Replace with the actual image resource ID
-                articleInfo = "Article information for male_reproductive"; // Replace with the actual article information
+                articleInfo = getString(R.string.Male_reproductive_system); // Replace with the actual article information
                 break;
             // Add more cases for other positions if needed
         }
