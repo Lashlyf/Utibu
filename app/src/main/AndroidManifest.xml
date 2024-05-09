@@ -16,7 +16,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".Activities.DetailsActivity"
+            android:name=".Activities.SlideshowActivity"
             android:exported="false" />
         <activity
             android:name=".Activities.OrderActivity"

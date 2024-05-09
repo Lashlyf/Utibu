@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.hospital.R;
 
-public class DetailsActivity extends AppCompatActivity {
+public class SlideshowActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_details);
+        setContentView(R.layout.activity_slideshow);
     }
 }
